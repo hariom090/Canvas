@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="main">
+        <div class="side">
+            <h2>Shapes</h2>
+            <div class="option1">
+                <div class="option" id="rectangle">&#9645; Rectangle</div>
+                <div class="option" id="circle">&#9675; Circle</div>
+                <div class="option" id="triangle">&#9651; Triangle</div>
+                <div class="option">
+                <input type="checkbox" id="fill-color">
+                <label for="fill-color" id="fill-color">Fill Color</label>
+                </div>
+                <!-- <div id="fill-color">&#9632; Fill Color</div> -->
+            </div>
+            <h2>Options</h2>
+            <div class="option2">
+                <div class="option active" id="brush">&#9998; Paint</div>
+                <div class="option" id="erase">&#x232B; Erase</div>
+                <input id="slider" type="range" max="25" min="1" value="4" >
+            </div>
+            <h2>Colors</h2>
+            <ul class="option3">
+                <li class="use"></li>
+                <li class="use in"></li>
+                <li class="use"></li>
+                <li class="use"></li>
+                <li class="use">
+                    <input type="color" id="color-pick" value="#381bdb">
+                </li>
+            </ul>
+            <button class="clear-btn">Clear Canvas</button>
+        </div>
+        <section class="full">
+            <canvas id="canva"></canvas>
+        </section>
+        <!-- <div class="full"></div> -->
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

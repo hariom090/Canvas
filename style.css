@@ -1,0 +1,137 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family:system-ui;
+}
+h2{
+   padding: 10px 0px;
+}
+ .main{
+    background-color: rgb(64, 64, 202);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    box-shadow: inset 0px 0px 300px 20px rgb(3, 3, 134);
+ }
+ .option1 div{
+   padding: 5px 0px;
+ }
+ .option:is(:hover,.active):where(div,label){
+   color: #4a98f7;
+ }
+ .option1 #fill-color{
+   cursor: pointer;
+   height: 14px;
+   width: 14px;
+ }
+ #fill-color:checked ~label{
+   color: #4a98f7;
+ }
+ .option2 div{
+   padding: 5px 0px;
+ }
+ .use:is(.in){
+  position:absolute;
+  content: "";
+  background: inherit;
+  width: 12px; 
+  height: 12px; 
+  border: 2px solid rgb(242, 235, 235); 
+  border-radius: inherit; 
+  /* transform: translate(-50%, -50%); */
+ }
+
+ .side{
+    height: 80vh;
+    width: 20vw;
+    background-color: antiquewhite;
+    padding: 0px 20px;
+    border-radius: 4px;
+    overflow: hidden;
+    /* box-shadow: 0px 4px 38px 5px rgb(37, 37, 77); */
+ }
+ .full{
+    height: 80vh;
+    width: 60vw;
+    /* background-color: white; */
+    border: 1.5px solid black;
+    border-radius: 4px;
+    /* box-shadow: 0px 4px 38px 5px rgb(37, 37, 77); */
+ }
+ #canva{
+  height: 80vh;
+  width: 60vw;
+ }
+ .option1{
+   /* margin-top: 15px; */
+    padding: 0px 10px;
+ }
+ .option2{
+   padding: 0px 10px;
+ }
+ .option3{
+   padding: 0px 10px;
+   display: flex;
+   justify-content: space-between;
+ }
+ .option3 .use{
+   margin-top: 15px;
+   height: 20px;
+   width: 20px;
+   border-radius: 50%;
+   position: relative;
+   list-style: none;
+ }
+ .option3 .use:nth-child(1){
+   background-color: #fff;
+   border: 1px solid #bfbfbf;
+ }
+ .option3 .use:nth-child(2){
+   background-color: #000;
+   
+ } 
+ .option3 .use:nth-child(3){
+   background-color: #e60f0f;
+   
+ }
+  .option3 .use:nth-child(4){
+   background-color: #22cf19;
+   
+ } 
+ .option3 .use:nth-child(5){
+   background-color: #381bdb; 
+
+ }
+ .option3 #color-pick{
+   opacity: 0;
+   cursor: pointer;
+ }
+
+ .option3 .use.in::before{
+   position: absolute;
+   content: "";
+   top: 50%;
+   left: 50%;
+   height: 12px;
+   width: 12px;
+   background: inherit;
+   border-radius: inherit;
+   border: 2px solid #fff;
+   transform: translate(-50%,-50%);
+ }
+ .clear-btn{
+   margin-top: 1.5vw;
+   margin-left: 2.5vw;
+   height: 8vh;
+   width: 15vw;
+   color: #6f5be1;
+   font-size: larger;
+   font-weight: bold;
+   border: 5px solid  #6f5be1 ;
+   border-radius: 15px;
+   background-color: white;
+   cursor: pointer;
+
+ }
